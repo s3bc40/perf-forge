@@ -27,8 +27,8 @@
 use std::fs;
 use std::io::Write;
 use std::path::PathBuf;
-use std::time::Duration;
 use std::thread;
+use std::time::Duration;
 
 use divan::black_box;
 

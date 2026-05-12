@@ -13,6 +13,8 @@
 
 ```bash
 # Work from rust-benches/ directory
+cargo fmt --check                 # Check formatting
+cargo clippy --all-targets        # Lint checks
 cargo codspeed build              # Build all benches
 cargo codspeed run                # Validate locally (no actual measurement)
 cargo codspeed run -m simulation  # CPU simulation mode

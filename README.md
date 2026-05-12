@@ -48,6 +48,8 @@ python-benches/            # Python benchmarks (pytest-codspeed)
 
 ```bash
 cd rust-benches
+cargo fmt --check                  # Check formatting
+cargo clippy --all-targets         # Lint checks
 cargo codspeed build              # Build all benchmarks
 cargo codspeed run                # Run locally (validates setup, no measurement)
 cargo codspeed run -m simulation  # CPU simulation mode
