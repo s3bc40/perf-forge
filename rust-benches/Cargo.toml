@@ -1,0 +1,38 @@
+[package]
+name = "perf-forge"
+version = "0.1.0"
+edition = "2021"
+
+[dev-dependencies]
+divan = { package = "codspeed-divan-compat", version = "4" }
+criterion = { package = "codspeed-criterion-compat", version = "4" }
+rand = "0.8"
+rand_chacha = "0.3"
+
+[[bench]]
+name = "01_cpu_simulation"
+harness = false
+
+[[bench]]
+name = "02_walltime"
+harness = false
+
+[[bench]]
+name = "03_memory"
+harness = false
+
+[[bench]]
+name = "04_cycle_estimation"
+harness = false
+
+[[bench]]
+name = "05_flamegraph"
+harness = false
+
+[[bench]]
+name = "06_variance"
+harness = false
+
+[[bench]]
+name = "07_allocator"
+harness = false
