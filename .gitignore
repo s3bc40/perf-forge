@@ -1,0 +1,6 @@
+target/
+python-benches/.venv/
+python-benches/.ruff_cache/
+python-benches/.pytest_cache/
+python-benches/__pycache__/
+*.pyc
